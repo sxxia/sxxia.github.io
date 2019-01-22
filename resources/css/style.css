@@ -1,0 +1,363 @@
+/* -------------------------------------------- */
+
+
+/* Basic Setup */
+
+
+/* -------------------------------------------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {
+    zoom: 1
+}
+
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    /* eliminate additional y axis scroller */
+    overflow: hidden;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2,
+h3 {
+    display: inline-block;
+    border-bottom: 2px solid #38A1F3;
+    padding-bottom: 10px;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Nav */
+
+
+/* -------------------------------------------- */
+
+nav {
+    background-color: #38A1F3;
+}
+
+.nav {
+    text-align: center;
+    list-style: none;
+    margin: 10px auto;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+.nav li a:link,
+.nav li a:visited {
+    padding: 20px 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    transition: color 0.2s;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.nav li a:hover,
+.nav li a:active {
+    color: rgb(44, 130, 196);
+    background-color: transparent;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Header */
+
+
+/* -------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/background-header-min.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.brief-intro {
+    text-align: center;
+    /* margin: 250px auto 0; */
+    /* margin-top: 250px; */
+    margin: 250px auto 50px;
+    width: 70%;
+}
+
+.brief-intro h1 {
+    color: #38A1F3;
+    font-size: 500%;
+}
+
+.brief-intro p {
+    color: #fff;
+    font-size: 150%;
+}
+
+.btn:link,
+.btn:visited {
+    background-color: #38A1F3;
+    border: 1px solid #38A1F3;
+    color: #fff;
+    margin-right: 30px;
+    transition: background-color 0.2s;
+    font-size: 80%;
+    margin-top: 80px;
+    padding: 8px 14px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgb(44, 130, 196);
+}
+
+
+/* -------------------------------------------- */
+
+
+/* About Me */
+
+
+/* -------------------------------------------- */
+
+.about-me-text {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    font-size: 120%;
+}
+
+.about-me-text p {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Skills */
+
+
+/* -------------------------------------------- */
+
+.skills {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 120%;
+}
+
+.skills p {
+    margin: 30px auto 0px;
+    text-align: left;
+    width: 75%;
+}
+
+.skill-set {
+    margin: 50px auto;
+    width: 80%;
+}
+
+.chart {
+    position: relative;
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.percent {
+    display: inline-block;
+    font-size: 21px;
+    color: #000;
+    line-height: 110px;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Projects */
+
+
+/* -------------------------------------------- */
+
+.projects {
+    text-align: center;
+    font-size: 120%;
+}
+
+.projects h2,
+.projects p {
+    margin-bottom: 30px;
+}
+
+.project-set {
+    font-size: 80%;
+}
+
+.addpadding {
+    /* border: 2px solid #f17b79; */
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+}
+
+.addpadding p {
+    text-align: left;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Contact */
+
+
+/* -------------------------------------------- */
+
+.contact {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.contact p {
+    margin-top: 100px;
+    text-align: left;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Experiences */
+
+
+/* -------------------------------------------- */
+
+.experiences {
+    background-color: #f2f2f2;
+    font-size: 120%;
+}
+
+.detail-experience {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+.detail-experience p {
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom: 120px;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Footer */
+
+
+/* -------------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    margin: 30px;
+}
+
+
+/* -------------------------------------------- */
+
+
+/* Scroll menu */
+
+
+/* -------------------------------------------- */
+
+.scroll-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #38A1F3;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.scroll-menu .nav {
+    margin: 5px auto;
+}
+
+.scroll-menu .nav li a:link,
+.scroll-menu .nav li a:visited {
+    padding: 10px 0;
+    color: #fff;
+}
+
+.scroll-menu .nav li a:hover,
+.scroll-menu .nav li a:active {
+    color: rgb(44, 130, 196);
+    background-color: transparent;
+}
