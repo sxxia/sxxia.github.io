@@ -8,9 +8,6 @@ $(function() {
             }
         });
     });
-});
-
-$(document).ready(function() {
 
     $('.js--scroll-more').click(function() {
         $('html, body').animate({ scrollTop: $('.js--section-about-me').offset().top }, 1000);
@@ -30,6 +27,16 @@ $(document).ready(function() {
         offset: '60px'
     });
 
+    $('.js--projects').waypoint(function(direction){
+            $('.js--projects').addClass('animated fadeIn');
+        }, {
+            offset: '60%'
+        });
 
-
+        $('.js--wp-4').waypoint(function(direction) {
+            // 增加第一个animation
+            $('.js--wp-4').addClass('animated zoomIn');
+        }, {
+            offset: '90%'
+        });
 });
